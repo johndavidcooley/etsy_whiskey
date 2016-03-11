@@ -14,6 +14,7 @@ function makeWhiskeyProduct(whiskey) {
 	var whiskeyPrice = whiskey.price;
 	var whiskeyUSD = whiskey.currency_code;
 	var whiskeyPage = whiskey.url;
+	var whiskeyStoreName = whiskey.Shop.shop_name;
 
 		return `
 	<div class="pulled">
@@ -34,7 +35,7 @@ function makeWhiskeyProduct(whiskey) {
 			<a href="items.url">${whiskeyTitle}</a>
 		</div>
 		<div class="whiskey-distiller">
-			<a href="items.url">${whiskeyPage}</a>
+			<a href="${whiskeyPage}">${whiskeyStoreName}</a>
 		</div>
 		<div class="whiskey-price">${whiskeyPrice}</div>
 		<div class="whiskey-usd">${whiskeyUSD}</div>
