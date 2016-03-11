@@ -6,53 +6,62 @@
 </head>
 <body>
 
-<!-- START OF APP DIV -->
+<!-- START OF APP DIV ///// START OF APP DIV -->
 <div class="app">
 
-<!-- START OF HEADER -->
+<!-- START OF HEADER ///// START OF HEADER -->
 <header>
 
 	<div class="header-top">
 		<div id="logo-and-search">
 			<ul>
-				<li>Etsy</li>
 				<li>
-					<form>
-						<input>whiskey</input>
+					<!-- <a href="#"><img src="../images/etsylogo.20160212170534.png"></a> -->
+				</li>
+				<li>
+					<!-- <form> -->
+						<input placeholder="whiskey"></input>
 						<button>Search</button>
-					</form>
+					<!-- </form> -->
 				</li>
 			</ul>
 		</div>
 
 		<div id="sign-in">
 			<ul>
-				<li>Sell on Etsy</li>
-				<li>Register</li>
-				<li>Sign in</li>
-				<li id="cart">CART</li>
+				<li class="header-cart">Sell on Etsy</li>
+				<li class="header-cart">Register</li>
+				<li class="header-cart">Sign in</li>
+				<li class="header-cart" id="cart">
+					<ul>
+						<li></li>
+						<li>
+							<!-- <img src="../images/cart.png" alt=""> -->
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
 	<nav>
-		<ul>
-			<li><a href="#">Clothing & Accessories</a></li>
-			<li><a href="#">Jewelry</a></li>
-			<li><a href="#">Craft Supplies & Toolsd</a></li>
-			<li><a href="#">Weddings</a></li>
-			<li><a href="#">Entertainment</a></li>
-			<li><a href="#">Home & Living</a></li>
-			<li><a href="#">Kids & Baby</a></li>
-			<li><a href="#">Vintage</a></li>
+		<ul class="categories">
+			<li class="header-categories"><a href="#">Clothing & Accessories</a></li>
+			<li class="header-categories"><a href="#">Jewelry</a></li>
+			<li class="header-categories"><a href="#">Craft Supplies & Tools</a></li>
+			<li class="header-categories"><a href="#">Weddings</a></li>
+			<li class="header-categories"><a href="#">Entertainment</a></li>
+			<li class="header-categories"><a href="#">Home & Living</a></li>
+			<li class="header-categories"><a href="#">Kids & Baby</a></li>
+			<li class="header-categories"><a href="#">Vintage</a></li>
 		</ul>
 	</nav>
 	
 </header>
-<!-- END OF HEADER -->
+<!-- END OF HEADER ///// END OF HEADER -->
 
 
 
-<!-- START OF MAIN DIV -->
+<!-- START OF MAIN DIV ///// START OF MAIN DIV -->
 <div class="main">
 	<div class="sidebar-products-container">
 		<aside>
@@ -119,13 +128,17 @@
 
 			Top categories for "whiskey"
 			<div class="placeholder-for-later"></div>
-			<div>
-				<div>
-				<a href="#">All categories</a> <strong>> "whiskey"</strong> (31,504 results)
-				</div>
-				<div>
+			<div class="pull-data">
+				<ul>
+					<li>
+						<a href="#">All categories</a> <strong>> "whiskey"</strong> (31,504 results)
+				</li>
+				<li>
 					Sort by: <a href="#">Relevancy</a>
-				</div>
+				</ul>
+
+<!-- DATA GOES HERE ///// DATA GOES HERE -->
+
 			</div>
 
 		</div>
@@ -178,11 +191,11 @@
 		</div>
 	</div>
 </div>
-<!-- END OF MAIN DIV -->
+<!-- END OF MAIN DIV ///// END OF MAIN DIV -->
 
 
 
-<!-- START OF FOOTER -->
+<!-- START OF FOOTER ///// START OF FOOTER -->
 <footer>
 	<div>
 		Get top trends and fresh editors' picks in your inbox with Etsy Finds.
@@ -271,11 +284,44 @@
 	</div>
 
 </footer>
-<!-- END OF FOOTER -->
+<!-- END OF FOOTER ///// END OF FOOTER -->
 
 </div>
-<!-- END OF APP DIV -->
+<!-- END OF APP DIV ///// END OF APP DIV -->
 
 <script src="js/bundle.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- return `
+<div class="pulled">
+	<div class="whiskey-image">
+		<a href="items.url">
+			<img src="${whiskeyImage}" alt="${items.description}">
+		</a>
+	</div>
+	<div class="hover-images">
+		<a href="#">
+			<img src="/images/heart.png" alt="">
+		</a>
+		<a href="#">
+			<img src="/images/hamburger.png" alt="">
+		</a>
+	</div>
+	<div class="whiskey-title">
+		<a href="items.url">${items.title}</a>
+	</div>
+	<div class="whiskey-distiller">
+		<a href="items.url">${items.shop_name}</a>
+	</div>
+	<div class="whiskey-price">${items.price}</div>
+	<div class="whiskey-usd">${items.currency_code}</div>
+</div>
+` -->
+
+
+
+
