@@ -13,38 +13,40 @@
 <header>
 
 	<div class="header-top">
-		<div id="logo-and-search">
-			<ul>
-				<li>
-					<a href="#"><img src="/images/etsylogo.20160212170534.png"></a>
-				</li>
-				<li>
-					<!-- <form> -->
-						<input placeholder="whiskey"></input>
-						<button>Search</button>
-					<!-- </form> -->
-				</li>
-			</ul>
-		</div>
-
-		<div id="sign-in">
-			<ul>
-				<li class="header-cart">Sell on Etsy</li>
-				<li class="header-cart">Register</li>
-				<li class="header-cart">Sign in</li>
-				<li class="header-cart" id="cart">
+		<div class="header-top-container">
+			<ul class="logo-and-search">
+				<li id="logo-left">
 					<ul>
-						<li></li>
 						<li>
-							<img src="/images/cart.png" alt="">
+							<a href="www.etsy.com"><img id="etsy-logo" src="/images/etsylogo.20160212170534.png"></a>
+						</li>
+						<li>
+							<input placeholder="whiskey"></input>
+							<button>Search</button>
+						</li>
+					</ul>
+				</li>
+
+				<li id="logo-right">
+					<ul>
+						<li><a href="#">Sell on Etsy</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">Sign in</a></li>
+						<li>
+							<a href="#">
+								Cart
+								<br />
+								<img src="/images/cart.png" alt="">
+							</a>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 	</div>
+
 	<nav>
-		<ul class="header-categories">
+		<ul class="nav-categories">
 			<li><a href="#">Clothing & Accessories</a></li>
 			<li><a href="#">Jewelry</a></li>
 			<li><a href="#">Craft Supplies & Tools</a></li>
@@ -55,7 +57,6 @@
 			<li><a href="#">Vintage</a></li>
 		</ul>
 	</nav>
-	
 </header>
 <!-- END OF HEADER ///// END OF HEADER -->
 
@@ -203,92 +204,94 @@
 
 <!-- START OF FOOTER ///// START OF FOOTER -->
 <footer>
-	<div>
-		Get top trends and fresh editors' picks in your inbox with Etsy Finds.
-		<form>
-			<input type="text" placeholder="enter your email">
-		</form>
-		<button><a href="#">Subscribe</a></button>
+	<div class="footer-container">
+		<div class="top-trends">
+			<div id="trends-above">
+				<h3>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
+			</div>
+			<div id="trends-below">
+				<input type="text" placeholder="enter your email">
+				<button><strong>Subscribe</strong></button>
+			</div>
+		</div>
+
+		<div>
+			<ul class="footer-list">
+				<li>
+					
+						<div>Turn your passion into a business</div>
+						<div><button>Open a shop</button></div>
+						<br />
+						<div>Sell on Etsy</div>
+						<div><a href="#">Seller handbook</a></div>
+						<div><a href="#">Etsy credit card reader</a></div>
+						<div><a href="#">Manufacturing</a></div>
+					
+				</li>
+				<li>
+					
+						<div>Join the community</div>
+						<div><a href="#">Teams</a></div>
+						<div><a href="#">Forums</a></div>
+						<div><a href="#">Upcoming events</a></div>
+						<div><a href="#">Affiliates</a></div>
+					
+				</li>
+				<li>
+					
+						<div>Discover and shop</div>
+						<div><a href="#">Gift cards</a></div>
+						<div><a href="#">Blog</a></div>
+						<div><a href="#">Tastemakers</a></div>
+						<div><a href="#">Mobile apps</a></div>
+						<div><a href="#">Gift registries</a></div>
+						<div><a href="#">Wholesale</a></div>
+						<div><a href="#">Search</a></div>
+						<div><a href="#">Editors' picks</a></div>
+					
+				</li>
+				<li>
+					
+						<div>Get to know us</div>
+						<div><a href="#">About</a></div>
+						<div><a href="#">Policies</a></div>
+						<div><a href="#">Careers</a></div>
+						<div><a href="#">Press</a></div>
+						<div><a href="#">Developers</a></div>
+						<div><a href="#">Investors</a></div>
+					
+				</li>
+				<li>
+					
+						<div>Follow Etsy</div>
+						<div><a href="#">XX Facebook</a></div>
+						<div><a href="#">XX Twiiter</a></div>
+						<div><a href="#">XX Pinterest</a></div>
+						<div><a href="#">XX Instagram</a></div>
+					
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<div>
-		<ul>
-			<li>
-				<ul>
-					<li>Turn your passion into a business</li>
-					<li><button><a href="#">Open a shop</a></button></li>
-					<br />
-					<li>Sell on Etsy</li>
-					<li><a href="#">Seller handbook</a></li>
-					<li><a href="#">Etsy credit card reader</a></li>
-					<li><a href="#">Manufacturing</a></li>
-				</ul>
-			</li>
-			<li>
-				<ul>
-					<li>Join the community</li>
-					<li><a href="#">Teams</a></li>
-					<li><a href="#">Forums</a></li>
-					<li><a href="#">Upcoming events</a></li>
-					<li><a href="#">Affiliates</a></li>
-				</ul>
-			</li>
-			<li>
-				<ul>
-					<li>Discover and shop</li>
-					<li><a href="#">Gift cards</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Tastemakers</a></li>
-					<li><a href="#">Mobile apps</a></li>
-					<li><a href="#">Gift registries</a></li>
-					<li><a href="#">Wholesale</a></li>
-					<li><a href="#">Search</a></li>
-					<li><a href="#">Editors' picks</a></li>
-				</ul>
-			</li>
-			<li>
-				<ul>
-					<li>Get to know us</li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Policies</a></li>
-					<li><a href="#">Careers</a></li>
-					<li><a href="#">Press</a></li>
-					<li><a href="#">Developers</a></li>
-					<li><a href="#">Investors</a></li>
-				</ul>
-			</li>
-			<li>
-				<ul>
-					<li>Follow Etsy</li>
-					<li><a href="#">XX Facebook</a></li>
-					<li><a href="#">XX Twiiter</a></li>
-					<li><a href="#">XX Pinterest</a></li>
-					<li><a href="#">XX Instagram</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-
-	<div>
-		<ul>
+		<ul class="us-english">
 			<li><a href="#">XX United States</a></li>
 			<li><a href="#">English (US)</a></li>
 			<li><a href="#">$ USD</a></li>
-			&nbsp;
-			&nbsp;
 			<li><a href="#">Help</a></li>
 		</ul>
 	</div>
 		
 	<div>
-		<ul>
+		<ul class="copyright">
 			<li>&copy; 2016 Etsy, Inc.</li>
 			<li><a href="#">Legal</a></li>
 			<li><a href="#">Privacy</a></li>
 			<li><a href="#">Internet-based ads</a></li>
 		</ul>
 	</div>
-
+	
 </footer>
 <!-- END OF FOOTER ///// END OF FOOTER -->
 

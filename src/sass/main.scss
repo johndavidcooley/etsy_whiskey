@@ -1,13 +1,19 @@
 /* CSS Entry Point */
 
+// * {
+// 	border: 1px solid red;
+// }
 
 
-* {
-	border: 1px solid red;
+
+body {
+	background: #f5f5f1;
+	margin: 0;
 }
 
 ul {
 	padding: 0;
+	margin: 0;
 }
 
 li {
@@ -16,22 +22,183 @@ li {
 	padding: 0;
 }
 
-.header-cart {
-	display: inline-block;
-	float: right;
-	padding: 5px;
+a {
+	text-decoration: none;
+	color: #3e92b5
 }
 
-ul.header-categories {
+button {
+	background: #34a8c4;
+	color: white;
+	&:hover {
+		background: lighten(#34a8c4, 5%)
+	}
+}
+
+
+
+//HEADER     HEADER     HEADER
+
+header {
+	border: 2px solid navy;
+	background: white;
+}
+
+.header-top {
+	border-bottom: 3px solid red;
+}
+
+.header-top-container {
+	width: 1000px;
+	margin: auto;
+}
+
+.logo-and-search {
+	li {
+		display: inline-block;
+	}
+}
+
+#logo-left {
+	float: left;
+}
+
+#logo-right {
+	float: right;
+}
+
+#etsy-logo {
+	padding: 27px 0px 27px 0px;
+}
+
+nav {
+	border-bottom: 1px solid black;
+	clear: both;
+}
+
+ul.nav-categories {
 	text-align: center;
 	li {
 		display: inline-block;
 	}
 }
 
+
+// MAIN     MAIN     MAIN     MAIN
+
+.main {
+	border: 2px solid navy;
+	width: 1000px;
+	margin: auto;
+}
+
+
+
+
+
+//SIDEBAR     SIDEBAR     SIDEBAR
+
+.sidebar-products-container {
+	border: 4px dotted orange;
+	width: 250px;
+	float: left;
+}
+
+
+
+
+
+//JS     JS     JS     JS     JS
+
+.js {
+	border: 4px dotted purple;
+	width: 600px;
+	float: right;
+}
+
+
+
+
+//BELOW JS     BELOW JS     BELOW JS
+.below-js{
+	border: 4px dotted darkgreen;
+	clear: both;
+}
+
+
+
+
+//FOOTER     FOOTER     FOOTER     FOOTER
+footer {
+	border: 2px solid navy;
+}
+
+.footer-container {
+	clear: both;
+	width: 1000px;
+	margin: auto;
+	border-bottom: 1px solid red;
+}
+
+div.top-trends {
+	text-align: center;
+	border: 8px solid #efefeb;
+	border-radius: 6px;
+	margin: 25px auto 25px auto;
+}
+
+#trends-above {
+	margin: 20px 0px 5px 0px;
+	h3 {
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+#trends-below {
+	margin: 5px 0px 20px 0px;
+	input {
+		width: 232px;
+		height: 16px;
+		padding: 8px;
+		font-size: 14px;
+		border-radius: 3px;
+	}
+	button {
+		width: 100px;
+		height: 36px;
+		font-size: 14px;
+		border-radius: 3px;
+	}
+}
+
+.footer-list {
+	li {
+		width: 180px;
+		display: inline-block;
+	}
+}
+
+.us-english {
+	text-align: center;
+	li {
+		display: inline;
+	}
+}
+
+.copyright {
+	text-align: center;
+	li {
+		display: inline;
+	}
+}
+
+
+//DATA     DATA     DATA     DATA     DATA
+
 div.pulled {
 	display: inline-block;
-	width: 300px;
+	width: 180px;
 	overflow: hidden;
 	position: relative;
 }
@@ -51,7 +218,7 @@ div.pulled {
 	right: 10px;
 
 	&:hover {
-		display: inline;
+		display: inline-block;
 	}
 }
 
