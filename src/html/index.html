@@ -91,48 +91,79 @@
 				<ul>
 					<div>
 						<strong>Item type</strong>
-						<br />
-						<input type="radio" checked>All items</input>
-						<br />
-						<input type="radio">Handmade</input>
-						<br />
-						<input type="radio">Vintage</input>
-						<br />
-						Price ($)
-						<br />
-						<input class="low-high" type="text" placeholder="Low"></input>
-						to
-						<input class="low-high" type="text" placeholder="High"></input>
-						<br />
-						Filter by color
-						<br />
-						<div class="color-box" id="red"><a href="#"></a></div>
-						<div class="color-box" id="orange"><a href="#"></div>
-						<div class="color-box" id="yellow"><a href="#"></div>
-						<div class="color-box" id="green"><a href="#"></div>
-						<div class="color-box" id="blue"><a href="#"></div>
-						<div class="color-box" id="purple"><a href="#"></div>
-						<div class="color-box" id="black"><a href="#"></div>
-						<div class="color-box" id="white"><a href="#"></div>
-						Ordering options
-						<br />
-						<input type="checkbox">Accepts Etsy gift cards</input>
-						<br />
-						<input type="checkbox">Customizable</input>
-						<br />
-						Shop location
-						<br />
-						<input type="radio" checked>Anywhere</input>
-						<br />
-						<input type="radio">United States</input>
-						<br />
-						<a href="#">Choose a custom location</a>
-						<br />
-						Ship to
-						<br />
-						<select>
-							<option value="United States">United States</option>
-						</select>
+						<div class="left-nav radio">
+							<div id="all-items">
+								<input type="radio" checked><strong>All items</strong></input>
+							</div>
+							<div>
+								<input type="radio">Handmade</input>
+							
+							</div>
+							<div>
+								<input type="radio">Vintage</input>
+							</div>
+						</div>
+						<div class="left-nav dollars">
+							<div>
+								<strong>Price ($)</strong>
+							</div>
+							<div>
+								<input class="low-high" id="lo" type="text" placeholder="Low"></input>
+								to
+								<input class="low-high" id="hi" type="text" placeholder="High"></input>
+								<input class="low-high" id="submit-price" type="text" placeholder=">"></input>
+							</div>
+						</div>
+						<div class="left-nav colors">
+							<div>
+								<strong>Filter by color</strong>
+							</div>
+							<div>
+								<div class="color-box" id="red"><a href="#"></a></div>
+								<div class="color-box" id="orange"><a href="#"></a></div>
+								<div class="color-box" id="yellow"><a href="#"></a></div>
+								<div class="color-box" id="green"><a href="#"></a></div>
+								<div class="color-box" id="blue"><a href="#"></a></div>
+								<div class="color-box" id="purple"><a href="#"></a></div>
+								<div class="color-box" id="black"><a href="#"></a></div>
+								<div class="color-box" id="white"><a href="#"></a></div>
+							</div>
+						</div>
+						<div class="left-nav ordering-options">
+							<div>
+								<strong>Ordering options</strong>
+							</div>
+							<div class="gift-cards">
+								<input type="checkbox">Accepts Etsy gift cards</input>
+							</div>
+							<div class="gift-cards">
+								<input type="checkbox">Customizable</input>
+							</div>
+						</div>
+						<div class="left-nav shop-location">
+							<div>
+								<strong>Shop location</strong>
+							</div>
+							<div>
+								<input type="radio" checked><strong>Anywhere</strong></input>
+							</div>
+							<div id="USA">
+								<input type="radio">United States</input>
+							</div>
+							<div>
+								<a href="#">Choose a custom location</a>
+							</div>
+						</div>
+						<div class="left-nav ship-to">
+							<div>
+							<strong>Ship to</strong>
+							</div>
+							<div>
+							<select id="USA">
+								<option value="United States">United States</option>
+							</select>
+							</div>
+						</div>
 					</div>
 				</ul>
 			</div>

@@ -46,6 +46,10 @@ button {
 	}
 }
 
+select {
+	font-size: 28px;
+	width: 225px;
+}
 
 
 //HEADER     HEADER     HEADER
@@ -188,7 +192,7 @@ ul.nav-categories {
 .sidebar-products-container {
 	font-size: 14px;
 	margin-top: 20px;
-	width: 250px;
+	width: 260px;
 	float: left;
 }
 
@@ -212,7 +216,7 @@ ul.nav-categories {
 	border: 1px solid #e1e3df;
 	border-radius: 3px;
 	margin: 10px 0px 0px 0px;
-	padding: 10px;
+	padding: 15px;
 	input {
 		&.low-high {
 			width: 50px;
@@ -220,9 +224,89 @@ ul.nav-categories {
 	}
 }
 
+.left-nav {
+	border-bottom: 1px solid #e1e3df;
+	margin: 15px 0px 0px 0px;
+	padding: 0px 0px 15px 0px;
+	&.radio {
+		padding-top: 0;
+		color: #3e92b5;
+		div {
+			padding: 1px 0px 1px 0px;
+		}
+	}
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	&.dollars {
+		div {
+			padding: 2px 0px 2px 0px;
+			input {
+				border: 1px solid #e1e3df;
+				border-radius: 3px;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+	}
+	&.colors {
+		div {
+			padding: 2px 0px 2px 0px;
+			input {
+				height: 50px;
+				width: 80px;
+			}
+		}
+	}
+	&.ordering-options {
+		div {
+			padding: 2px 0px 2px 0px;
+		}
+	}
+	&.shop-location {
+		div {
+			padding: 2px 0px 2px 0px;
+		}
+	}
+	&.ship-to {
+		div {
+			padding: 2px 0px 2px 0px;
+		}
+	}
+}
+
+.gift-cards {
+	color: #3e92b5;
+}
+
+#all-items {
+	color: black;
+	padding-top: 0;
+}
+
+#lo {
+	height: 30px;
+	width: 75px;
+}
+
+#hi {
+	height: 30px;
+	width: 75px;
+}
+
+#submit-price {
+	height: 30px;
+	width: 30px;
+}
+
+#USA {
+	color: #3e92b5;
+}
+
 .color-box {
 	display: inline-block;
-	height: 22px;
+	height: 20px;
 	width: 22px;
 	border-radius: 3px;
 	&#red {
@@ -247,7 +331,7 @@ ul.nav-categories {
 		background: #000000;
 	}
 	&#white {
-		height: 20px;
+		height: 18px;
 		width: 20px;
 		background: #ffffff;
 		border: 1px solid #000000;
@@ -462,7 +546,7 @@ div.top-trends {
 
 div.pulled {
 	display: inline-block;
-	width: 180px;
+	width: 225px;
 	overflow: hidden;
 	position: relative;
 }
@@ -475,7 +559,6 @@ div.pulled {
 }
 
 .hover-images {
-	// z-index: 2;
 	display: none;
 	position: absolute;
 	top: 10px;
