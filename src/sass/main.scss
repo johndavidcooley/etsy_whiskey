@@ -345,25 +345,33 @@ ul.nav-categories {
 //JS     JS     JS     JS     JS
 
 .js {
-	border: 4px dotted purple;
 	margin-top: 20px;
 	width: 710px;
 	float: right;
 }
 
 .placeholder-for-later {
+	color: black;
+	text-align: center;
+	line-height: 400px;
+	font-size: 100px;
 	border-bottom: 1px solid #e1e3df;
 	height: 400px;
 	background: yellow;
+	margin: 10px 0px 20px 0px;
 	padding: 0px 0px 25px 0px;
 }
 
 #sort-left {
+	font-size: 14px;
 	float: left;
+	margin: 0px 0px 20px 10px;
 }
 
 #sort-right {
+	font-size: 14px;
 	float: right;
+	margin: 0px 10px 20px 200px;
 }
 
 
@@ -515,6 +523,9 @@ div.top-trends {
 #help {
 	border-radius: 4px;
 	margin-left: 40px;
+	&:hover {
+		background: #f5f5f1;
+	}
 	a {
 		color: black;
 		font-size: 16px;
@@ -544,11 +555,20 @@ div.top-trends {
 
 //DATA     DATA     DATA     DATA     DATA
 
+.pulled-from-js {
+	margin-top: 20px;
+}
+
+
 div.pulled {
+	border: 1px solid #e1e3df;
+	border-radius: 3px;
 	display: inline-block;
-	width: 225px;
+	font-size: 13px;
+	margin: 0px 3px 10px 3px;
 	overflow: hidden;
 	position: relative;
+	width: 225px;
 }
 
 .whiskey-title {
@@ -559,7 +579,7 @@ div.pulled {
 }
 
 .hover-images {
-	display: none;
+	display: hidden;
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -569,6 +589,44 @@ div.pulled {
 	}
 }
 
+.below-whiskey-image {
+	background: white;
+	color: black;
+	div {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	
+}
+
+.whiskey-title {
+	margin: 0px 5px 0px 5px;
+	a {
+		color: black;
+		&:hover {
+		text-decoration: none;
+		}
+	}
+}
+
+.whiskey-distiller {
+	color: black;
+	margin-left: 5px;
+	display: inline-block;
+	a {
+		color: #9a9a9a;
+	}
+}
+
+.price-usd {
+	color: #78c094;
+	display: inline-block;
+	margin-right: 5px;
+	float: right;
+	div {
+		display: inline-block;
+	}
+}
 
 
 
