@@ -4,10 +4,17 @@
 // 	border: 1px solid red;
 // }
 
+html {
+	background: white;
+}
 
+.app {
+	margin: 0;
+}
 
 body {
 	background: #f5f5f1;
+	font-family: Arial;
 	margin: 0;
 }
 
@@ -24,7 +31,10 @@ li {
 
 a {
 	text-decoration: none;
-	color: #3e92b5
+	color: #3e92b5;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 button {
@@ -40,12 +50,16 @@ button {
 //HEADER     HEADER     HEADER
 
 header {
-	border: 2px solid navy;
+	width: 100%;
+	float: right;
 	background: white;
+	border-bottom: 1px solid #e1e3df;
 }
 
 .header-top {
-	border-bottom: 3px solid red;
+	border-bottom: 1px solid #e1e3df;
+	height: 72px;
+	margin: 25px 0px 12px 0px;
 }
 
 .header-top-container {
@@ -54,8 +68,68 @@ header {
 }
 
 .logo-and-search {
+	vertical-align: top;
 	li {
 		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		&#input-button {
+			margin-left: 20px;
+			margin-top: -5px;
+		}
+		input {
+			font-size: 18px;
+			height: 20px;
+			padding: 8px;
+			width: 219px;
+		}
+		button {
+			border: 2px solid #34a8c4;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			font-size: 18px;
+			height: 40px;
+			padding: 0;
+			position: absolute;
+			left: 200px;
+			top: 0px;
+			width: 80px;
+		}
+	}
+}
+
+.cart-side {
+	vertical-align: top;
+	font-size: 14px;
+	li {
+		display: inline-block;
+		margin: 0px 8px 0px 8px;
+		vertical-align: middle;
+		&#sign-in-border {
+			border: 1px solid #3e92b5;
+			border-radius: 4px;
+			padding: 8px;
+			&:hover {
+				background: lighten(#3e92b5, 48%);
+			}
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		&#cart {
+			border-left: 1px solid #e1e3df;
+			padding-left: 13px;
+			a {
+				color: #666666;
+				&:hover {
+				color: black;
+				text-decoration: none;
+				}
+			}
+			
+		}
 	}
 }
 
@@ -67,19 +141,24 @@ header {
 	float: right;
 }
 
-#etsy-logo {
-	padding: 27px 0px 27px 0px;
-}
-
 nav {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #e1e3df;
 	clear: both;
 }
 
 ul.nav-categories {
-	text-align: center;
+	margin-left: 140px;
 	li {
 		display: inline-block;
+		margin: 0px 5px 12px 5px;
+		a {
+			color: #777777;
+			font-size: 16px;
+			&:hover {
+				color: black;
+				text-decoration: none;
+			}
+		}
 	}
 }
 
@@ -87,7 +166,14 @@ ul.nav-categories {
 // MAIN     MAIN     MAIN     MAIN
 
 .main {
-	border: 2px solid navy;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #e1e3df;
+	margin-bottom: 25px;
+	// height: 3075px;
+}
+
+.main-container {
 	width: 1000px;
 	margin: auto;
 }
@@ -100,6 +186,7 @@ ul.nav-categories {
 
 .sidebar-products-container {
 	border: 4px dotted orange;
+	margin-top: 20px;
 	width: 250px;
 	float: left;
 }
@@ -112,32 +199,94 @@ ul.nav-categories {
 
 .js {
 	border: 4px dotted purple;
-	width: 600px;
+	margin-top: 20px;
+	width: 710px;
+	float: right;
+}
+
+.placeholder-for-later {
+	border-bottom: 1px solid #e1e3df;
+	height: 400px;
+	background: yellow;
+	padding: 0px 0px 25px 0px;
+}
+
+#sort-left {
+	float: left;
+}
+
+#sort-right {
 	float: right;
 }
 
 
 
 
+
 //BELOW JS     BELOW JS     BELOW JS
-.below-js{
-	border: 4px dotted darkgreen;
-	clear: both;
+.below-js {
+	float: right;
+	font-size: 14px;
+	margin: 20px 0px 20px 0px;
+	width: 710px;
+}
+
+.related-whiskey {
+	margin: 15px 0px 15px 0px;
+	li {
+		display: inline-block;
+		vertical-align: top;
+		width: 175px;
+		div {
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+	}
+}
+
+.numbers {
+	li {
+		background: white;
+		border: 1px solid #e1e3df;
+		display: inline-block;
+		float: left;
+		font-size: 18px;
+		margin: 20px 0px 10px 0px;
+		padding: 8px 12px 8px 12px;
+		&:hover {
+			background: lighten(#f5f5f1, 2%);
+		}
+		&.not-white {
+			background: #f5f5f1;
+		}
+		&.not-white-dark {
+			background: darken(#f5f5f1, 5%);
+			border: 1px solid black;
+		}
+		a {
+			color: black;
+			text-decoration: none;
+		}
+	}
 }
 
 
 
 
 //FOOTER     FOOTER     FOOTER     FOOTER
-footer {
-	border: 2px solid navy;
+
+.footer {
+	height: 100%;
+	width: 100%;
+	float: left;
+	border: 10px solid red;
 }
 
 .footer-container {
 	clear: both;
 	width: 1000px;
 	margin: auto;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #e2e2e2;
 }
 
 div.top-trends {
@@ -173,23 +322,75 @@ div.top-trends {
 }
 
 .footer-list {
+	margin: 0px 0px 0px 30px;
 	li {
 		width: 180px;
 		display: inline-block;
+		font-size: 14px;
+		margin-bottom: 25px;
+		vertical-align: top;
+		button {
+			border-radius: 3px;
+			font-size: 14px;
+			height: 30px;
+			width: 108px;
+		}
+		div {
+			margin: 8px 0px 8px 0px;
+			&#first-li {
+				margin-bottom: 12px;
+			}
+		}
 	}
 }
 
 .us-english {
 	text-align: center;
+	margin: 40px auto 30px auto;
 	li {
+		border: 1px solid #e2e2e2;
 		display: inline;
+		padding: 8px 8px 8px 8px;
+		white-space: nowrap;
+		&:hover {
+			background: lightblue;
+		}
+		a {
+			color: #666666;
+			font-size: 15px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 
+#help {
+	border-radius: 4px;
+	margin-left: 40px;
+	a {
+		color: black;
+		font-size: 16px;
+		padding: 0px 40px 0px 40px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+}
+
 .copyright {
+	color: #999999;
+	font-size: 13px;
+	// margin: 0px 0px 30px 0px;
+	padding-bottom: 30px;
 	text-align: center;
 	li {
 		display: inline;
+		margin: 0px 10px 0px 10px;
+		a {
+			color: black;
+		}
 	}
 }
 

@@ -14,34 +14,31 @@
 
 	<div class="header-top">
 		<div class="header-top-container">
-			<ul class="logo-and-search">
-				<li id="logo-left">
-					<ul>
-						<li>
-							<a href="www.etsy.com"><img id="etsy-logo" src="/images/etsylogo.20160212170534.png"></a>
-						</li>
-						<li>
-							<input placeholder="whiskey"></input>
-							<button>Search</button>
-						</li>
-					</ul>
-				</li>
+			<div class="logo-and-search">
+				<ul id="logo-left">
+					<li>
+						<a href="www.etsy.com"><img id="etsy-logo" src="/images/etsylogo.20160212170534.png"></a>
+					</li>
+					<li id="input-button">
+						<input placeholder="whiskey"></input>
+						<button>Search</button>
+					</li>
+				</ul>
+			</div>
 
-				<li id="logo-right">
-					<ul>
+			<div class="cart-side">
+				<ul id="logo-right">
 						<li><a href="#">Sell on Etsy</a></li>
 						<li><a href="#">Register</a></li>
-						<li><a href="#">Sign in</a></li>
-						<li>
+						<li id="sign-in-border"><a href="#">Sign in</a></li>
+						<li id="cart">
 							<a href="#">
-								Cart
-								<br />
-								<img src="/images/cart.png" alt="">
+								<div><img src="/images/cart.png" height="32" alt=""></div>
+								<div>&nbsp;Cart</div>
 							</a>
 						</li>
-					</ul>
-				</li>
-			</ul>
+				</ul>
+			</div>
 		</div>
 	</div>
 
@@ -64,6 +61,7 @@
 
 <!-- START OF MAIN DIV ///// START OF MAIN DIV -->
 <div class="main">
+<div class="main-container">
 	<div class="sidebar-products-container">
 		<aside>
 			Show results for:
@@ -91,8 +89,7 @@
 			<div class="aside-lower">
 				<ul>
 					<div>
-					Item type
-					<form>
+						Item type
 						<input type="radio" checked>All items</input>
 						<input type="radio">Handmade</input>
 						<input type="radio">Vintage</input>
@@ -120,24 +117,23 @@
 						<select>
 							<option value="United States">United States</option>
 						</select>
-					</form>
 					</div>
 				</ul>
 			</div>
 		</aside>
 	</div>
+
 	<div class="js">
 
 		Top categories for "whiskey"
 		<div class="placeholder-for-later"></div>
 		<div class="pull-data">
-			<ul>
-				<li>
-					<a href="#">All categories</a> <strong>> "whiskey"</strong> (31,504 results)
-			</li>
-			<li>
+			<div id="sort-left">
+				<a href="#">All categories</a> <strong> "whiskey"</strong> (31,504 results)
+			</div>
+			<div class="sort-right">
 				Sort by: <a href="#">Relevancy</a>
-			</ul>
+			</div>
 
 			<div class="pulled-from-js">
 					
@@ -153,26 +149,20 @@
 		<div class="related-whiskey">
 			<ul>
 				<li>
-					<ul>
-						<li><a href="#">whiskey decanter</a></li>
-						<li><a href="#">whiskey barrel</a></li>
-						<li><a href="#">whiskey set</a></li>
-						<li><a href="#">bourbon</a></li>
-					</ul>
+					<div><a href="#">whiskey decanter</a></div>
+					<div><a href="#">whiskey barrel</a></div>
+					<div><a href="#">whiskey set</a></div>
+					<div><a href="#">bourbon</a></div>
 				</li>
 				<li>
-					<ul>
-						<li><a href="#">whiskey gifts</a></li>
-						<li><a href="#">jack daniels</a></li>
-						<li><a href="#">boyfriend gift</a></li>
-						<li><a href="#">scotch</a></li>
-					</ul>
+					<div><a href="#">whiskey gifts</a></div>
+					<div><a href="#">jack daniels</a></div>
+					<div><a href="#">boyfriend gift</a></div>
+					<div><a href="#">scotch</a></div>
 				</li>
 				<li>
-					<ul>
-						<li><a href="#">cigar</a></li>
-						<li><a href="#">beer</a></li>
-					</ul>
+					<div><a href="#">cigar</a></div>
+					<div><a href="#">beer</a></div>
 				</li>
 			</ul>
 		</div>
@@ -183,20 +173,23 @@
 			<a href="#">WhiskeyInkandLace</a>.&nbsp;
 			<a href="#">See more.</a>
 
-			<a class="got-to-page" href="#"><</a>
-			<a class="got-to-page" href="#">1</a>
-			<a class="got-to-page" href="#">2</a>
-			<a class="got-to-page" href="#">3</a>
-			<a class="got-to-page" href="#">4</a>
-			<a class="got-to-page" href="#">5</a>
-			<a class="got-to-page" href="#">6</a>
-			<a class="got-to-page" href="#">7</a>
-			<a class="got-to-page" href="#">8</a>
-			<a class="got-to-page" href="#">...</a>
-			<a class="got-to-page" href="#">250</a>
-			<a class="got-to-page" href="#">></a>
+			<ul class="numbers">
+				<li class="got-to-page not-white" href="#"><</li>
+				<li class="got-to-page not-white-dark">1</li>
+				<li><a class="got-to-page" href="#">2</a></li>
+				<li><a class="got-to-page" href="#">3</a></li>
+				<li><a class="got-to-page" href="#">4</a></li>
+				<li><a class="got-to-page" href="#">5</a></li>
+				<li><a class="got-to-page" href="#">6</a></li>
+				<li><a class="got-to-page" href="#">7</a></li>
+				<li><a class="got-to-page" href="#">8</a></li>
+				<li class="got-to-page not-white">...</li>
+				<li><a class="got-to-page" href="#">250</a></li>
+				<li><a class="got-to-page" href="#">></a></li>
+			</ul>
 		</div>
 	</div>
+</div>
 </div>
 <!-- END OF MAIN DIV ///// END OF MAIN DIV -->
 
@@ -230,7 +223,7 @@
 				</li>
 				<li>
 					
-						<div>Join the community</div>
+						<div id="first-li">Join the community</div>
 						<div><a href="#">Teams</a></div>
 						<div><a href="#">Forums</a></div>
 						<div><a href="#">Upcoming events</a></div>
@@ -239,7 +232,7 @@
 				</li>
 				<li>
 					
-						<div>Discover and shop</div>
+						<div id="first-li">Discover and shop</div>
 						<div><a href="#">Gift cards</a></div>
 						<div><a href="#">Blog</a></div>
 						<div><a href="#">Tastemakers</a></div>
@@ -252,7 +245,7 @@
 				</li>
 				<li>
 					
-						<div>Get to know us</div>
+						<div id="first-li">Get to know us</div>
 						<div><a href="#">About</a></div>
 						<div><a href="#">Policies</a></div>
 						<div><a href="#">Careers</a></div>
@@ -263,7 +256,7 @@
 				</li>
 				<li>
 					
-						<div>Follow Etsy</div>
+						<div id="first-li">Follow Etsy</div>
 						<div><a href="#">XX Facebook</a></div>
 						<div><a href="#">XX Twiiter</a></div>
 						<div><a href="#">XX Pinterest</a></div>
@@ -279,7 +272,7 @@
 			<li><a href="#">XX United States</a></li>
 			<li><a href="#">English (US)</a></li>
 			<li><a href="#">$ USD</a></li>
-			<li><a href="#">Help</a></li>
+			<li id="help"><a href="#">Help</a></li>
 		</ul>
 	</div>
 		
