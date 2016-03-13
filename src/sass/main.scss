@@ -38,6 +38,7 @@ a {
 }
 
 button {
+	border: none;
 	background: #34a8c4;
 	color: white;
 	&:hover {
@@ -185,10 +186,72 @@ ul.nav-categories {
 //SIDEBAR     SIDEBAR     SIDEBAR
 
 .sidebar-products-container {
-	border: 4px dotted orange;
+	font-size: 14px;
 	margin-top: 20px;
 	width: 250px;
 	float: left;
+}
+
+.aside-upper {
+	border: 1px solid #e1e3df;
+	border-radius: 3px;
+	margin: 10px 0px 20px 0px;
+	background: white;
+	padding: 10px 10px 20px 10px;
+	ul {
+		margin-top: 10px;
+		li {
+			font-size: 14px;
+			margin: 5px 0px 5px 10px;
+		}
+	}
+}
+
+.aside-lower {
+	background: white;
+	border: 1px solid #e1e3df;
+	border-radius: 3px;
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+	input {
+		&.low-high {
+			width: 50px;
+		}
+	}
+}
+
+.color-box {
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+	border-radius: 3px;
+	&#red {
+		background: #f40b32;
+	}
+	&#orange {
+		background: #ff7f00;
+	}
+	&#yellow {
+		background: #f3cc0c;
+	}
+	&#green {
+		background: #0ac20a;
+	}
+	&#blue {
+		background: #0cccf3;
+	}
+	&#purple {
+		background: #a60cf3;
+	}
+	&#black {
+		background: #000000;
+	}
+	&#white {
+		height: 20px;
+		width: 20px;
+		background: #ffffff;
+		border: 1px solid #000000;
+	}
 }
 
 
@@ -423,4 +486,476 @@ div.pulled {
 	}
 }
 
+
+
+
+
+// * {
+// 	border: 1px solid red;
+// }
+
+// html {
+// 	background: white;
+// }
+
+// .app {
+// 	margin: 0;
+// }
+
+// body {
+// 	background: #f5f5f1;
+// 	font-family: Arial;
+// 	margin: 0;
+// }
+
+// ul {
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+// li {
+// 	list-style: none;
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// a {
+// 	text-decoration: none;
+// 	color: #3e92b5;
+// 	&:hover {
+// 		text-decoration: underline;
+// 	}
+// }
+
+// button {
+// 	background: #34a8c4;
+// 	border: none;
+// 	color: white;
+// 	&:hover {
+// 		background: lighten(#34a8c4, 5%)
+// 	}
+// }
+
+
+
+// //HEADER     HEADER     HEADER
+
+// header {
+// 	width: 100%;
+// 	float: right;
+// 	background: white;
+// 	border-bottom: 1px solid #e1e3df;
+// }
+
+// .header-top {
+// 	border-bottom: 1px solid #e1e3df;
+// 	height: 72px;
+// 	margin: 25px 0px 12px 0px;
+// }
+
+// .header-top-container {
+// 	width: 1000px;
+// 	margin: auto;
+// }
+
+// .logo-and-search {
+// 	vertical-align: top;
+// 	li {
+// 		display: inline-block;
+// 		position: relative;
+// 		vertical-align: middle;
+// 		&#input-button {
+// 			margin-left: 20px;
+// 			margin-top: -5px;
+// 		}
+// 		input {
+// 			font-size: 18px;
+// 			height: 20px;
+// 			padding: 8px;
+// 			width: 219px;
+// 		}
+// 		button {
+// 			border: 2px solid #34a8c4;
+// 			border-top-right-radius: 6px;
+// 			border-bottom-right-radius: 6px;
+// 			font-size: 18px;
+// 			height: 40px;
+// 			padding: 0;
+// 			position: absolute;
+// 			left: 200px;
+// 			top: 0px;
+// 			width: 80px;
+// 		}
+// 	}
+// }
+
+// .cart-side {
+// 	vertical-align: top;
+// 	font-size: 14px;
+// 	li {
+// 		display: inline-block;
+// 		margin: 0px 8px 0px 8px;
+// 		vertical-align: middle;
+// 		&#sign-in-border {
+// 			border: 1px solid #3e92b5;
+// 			border-radius: 4px;
+// 			padding: 8px;
+// 			&:hover {
+// 				background: lighten(#3e92b5, 48%);
+// 			}
+// 			a {
+// 				&:hover {
+// 					text-decoration: none;
+// 				}
+// 			}
+// 		}
+// 		&#cart {
+// 			border-left: 1px solid #e1e3df;
+// 			padding-left: 13px;
+// 			a {
+// 				color: #666666;
+// 				&:hover {
+// 				color: black;
+// 				text-decoration: none;
+// 				}
+// 			}
+			
+// 		}
+// 	}
+// }
+
+// #logo-left {
+// 	float: left;
+// }
+
+// #logo-right {
+// 	float: right;
+// }
+
+// nav {
+// 	border-bottom: 1px solid #e1e3df;
+// 	clear: both;
+// }
+
+// ul.nav-categories {
+// 	margin-left: 140px;
+// 	li {
+// 		display: inline-block;
+// 		margin: 0px 5px 12px 5px;
+// 		a {
+// 			color: #777777;
+// 			font-size: 16px;
+// 			&:hover {
+// 				color: black;
+// 				text-decoration: none;
+// 			}
+// 		}
+// 	}
+// }
+
+
+// // MAIN     MAIN     MAIN     MAIN
+
+// .main {
+// 	width: 100%;
+// 	float: left;
+// 	border-bottom: 1px solid #e1e3df;
+// 	margin-bottom: 25px;
+// 	// height: 3075px;
+// }
+
+// .main-container {
+// 	width: 1000px;
+// 	margin: auto;
+// }
+
+
+
+
+
+// //SIDEBAR     SIDEBAR     SIDEBAR
+
+// .sidebar-products-container {
+// 	border: 4px dotted orange;
+// 	margin-top: 20px;
+// 	width: 250px;
+// 	float: left;
+// }
+
+// .aside-upper {
+// 	background: white;
+// 	padding: 10px;
+// 	li {
+// 		margin: 5px 0px 5px 10px;
+// 	}
+// }
+
+// .aside-lower {
+// 	background: white;
+// 	padding: 10px;
+// 	input {
+// 		&.low-high {
+// 			width: 50px;
+// 		}
+// 	}
+// }
+
+// .color-box {
+// 	display: inline-block;
+// 	height: 22px;
+// 	width: 22px;
+// 	border-radius: 3px;
+// 	&#red {
+// 		background: #f40b32;
+// 	}
+// 	&#orange {
+// 		background: #ff7f00;
+// 	}
+// 	&#yellow {
+// 		background: #f3cc0c;
+// 	}
+// 	&#green {
+// 		background: #0ac20a;
+// 	}
+// 	&#blue {
+// 		background: #0cccf3;
+// 	}
+// 	&#purple {
+// 		background: #a60cf3;
+// 	}
+// 	&#black {
+// 		background: #000000;
+// 	}
+// 	&#white {
+// 		height: 20px;
+// 		width: 20px;
+// 		background: #ffffff;
+// 		border: 1px solid #000000;
+// 	}
+// }
+
+
+// //JS     JS     JS     JS     JS
+
+// .js {
+// 	border: 4px dotted purple;
+// 	margin-top: 20px;
+// 	width: 710px;
+// 	float: right;
+// }
+
+// .placeholder-for-later {
+// 	border-bottom: 1px solid #e1e3df;
+// 	height: 400px;
+// 	background: yellow;
+// 	padding: 0px 0px 25px 0px;
+// }
+
+// #sort-left {
+// 	float: left;
+// }
+
+// #sort-right {
+// 	float: right;
+// }
+
+
+
+
+
+// //BELOW JS     BELOW JS     BELOW JS
+// .below-js {
+// 	float: right;
+// 	font-size: 14px;
+// 	margin: 20px 0px 20px 0px;
+// 	width: 710px;
+// }
+
+// .related-whiskey {
+// 	margin: 15px 0px 15px 0px;
+// 	li {
+// 		display: inline-block;
+// 		vertical-align: top;
+// 		width: 175px;
+// 		div {
+// 			margin-top: 4px;
+// 			margin-bottom: 4px;
+// 		}
+// 	}
+// }
+
+// .numbers {
+// 	li {
+// 		background: white;
+// 		border: 1px solid #e1e3df;
+// 		display: inline-block;
+// 		float: left;
+// 		font-size: 18px;
+// 		margin: 20px 0px 10px 0px;
+// 		padding: 8px 12px 8px 12px;
+// 		&:hover {
+// 			background: lighten(#f5f5f1, 2%);
+// 		}
+// 		&.not-white {
+// 			background: #f5f5f1;
+// 		}
+// 		&.not-white-dark {
+// 			background: darken(#f5f5f1, 5%);
+// 			border: 1px solid black;
+// 		}
+// 		a {
+// 			color: black;
+// 			text-decoration: none;
+// 		}
+// 	}
+// }
+
+
+
+
+// //FOOTER     FOOTER     FOOTER     FOOTER
+
+// .footer {
+// 	border: 10px solid red;
+// }
+
+// .footer-container {
+// 	width: 1000px;
+// 	margin: auto;
+// 	border-bottom: 1px solid #e2e2e2;
+// }
+
+// div.top-trends {
+// 	text-align: center;
+// 	border: 8px solid #efefeb;
+// 	border-radius: 6px;
+// 	margin: 25px auto 25px auto;
+// }
+
+// #trends-above {
+// 	margin: 20px 0px 5px 0px;
+// 	h3 {
+// 		font-size: 14px;
+// 		margin: 0;
+// 	}
+// }
+
+// #trends-below {
+// 	margin: 5px 0px 20px 0px;
+// 	input {
+// 		width: 232px;
+// 		height: 16px;
+// 		padding: 8px;
+// 		font-size: 14px;
+// 		border-radius: 3px;
+// 	}
+// 	button {
+// 		width: 100px;
+// 		height: 36px;
+// 		font-size: 14px;
+// 		border-radius: 3px;
+// 	}
+// }
+
+// .footer-list {
+// 	margin: 0px 0px 0px 30px;
+// 	li {
+// 		width: 180px;
+// 		display: inline-block;
+// 		font-size: 14px;
+// 		margin-bottom: 25px;
+// 		vertical-align: top;
+// 		button {
+// 			border-radius: 3px;
+// 			font-size: 14px;
+// 			height: 30px;
+// 			width: 108px;
+// 		}
+// 		div {
+// 			margin: 8px 0px 8px 0px;
+// 			&#first-li {
+// 				margin-bottom: 12px;
+// 			}
+// 		}
+// 	}
+// }
+
+// .us-english {
+// 	text-align: center;
+// 	margin: 40px auto 30px auto;
+// 	li {
+// 		border: 1px solid #e2e2e2;
+// 		display: inline;
+// 		padding: 8px 8px 8px 8px;
+// 		white-space: nowrap;
+// 		&:hover {
+// 			background: lightblue;
+// 		}
+// 		a {
+// 			color: #666666;
+// 			font-size: 15px;
+// 			&:hover {
+// 				text-decoration: none;
+// 			}
+// 		}
+// 	}
+// }
+
+// #help {
+// 	border-radius: 4px;
+// 	margin-left: 40px;
+// 	a {
+// 		color: black;
+// 		font-size: 16px;
+// 		padding: 0px 40px 0px 40px;
+// 		&:hover {
+// 			text-decoration: none;
+// 		}
+// 	}
+
+// }
+
+// .copyright {
+// 	color: #999999;
+// 	font-size: 13px;
+// 	// margin: 0px 0px 30px 0px;
+// 	padding-bottom: 30px;
+// 	text-align: center;
+// 	li {
+// 		display: inline;
+// 		margin: 0px 10px 0px 10px;
+// 		a {
+// 			color: black;
+// 		}
+// 	}
+// }
+
+
+// //DATA     DATA     DATA     DATA     DATA
+
+// div.pulled {
+// 	display: inline-block;
+// 	width: 180px;
+// 	overflow: hidden;
+// 	position: relative;
+// }
+
+// .whiskey-title {
+// 	overflow: hidden;
+// 	white-space: nowrap;
+// 	text-overflow: ellipsis;
+	
+// }
+
+// .hover-images {
+// 	// z-index: 2;
+// 	display: none;
+// 	position: absolute;
+// 	top: 10px;
+// 	right: 10px;
+
+// 	&:hover {
+// 		display: inline-block;
+// 	}
+// }
 
