@@ -19,7 +19,7 @@ function makeWhiskeyProduct(whiskey) {
 		return `
 	<div class="pulled">
 		<div class="whiskey-image">
-			<a href="whiskeyPage">
+			<a href="${whiskeyPage}">
 				<img src="${whiskeyImage}" alt="${whiskeyDescription}" width="225" height="179">
 			</a>
 		</div>
